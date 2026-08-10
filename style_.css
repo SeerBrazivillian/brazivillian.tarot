@@ -1,0 +1,263 @@
+/* ดึงฟอนต์พร้อมกำหนดพฤติกรรม font-display */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --gold:#d4af37;
+  --beige: #ffffef;
+  --blue: #1b2a4a;
+  --black: #000;
+  --white: #fff;
+}
+body {
+  background: var(--beige);
+  font-family: 'Noto Sans Thai Looped', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.6;
+  color: var(--gold);
+  padding: 30px 20px;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--gold);
+}
+h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  padding-left: 20px ;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.0;
+  color: var(--gold);
+}
+h3{
+  font-family: 'Playfair Display','Noto Sans Thai Looped',serif,sans-serif;
+  text-align: left;
+  padding: 10px 0px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--blue);
+}
+h4{
+ font-family: 'Playfair Display','Noto Sans Thai Looped',serif,sans-serif;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 3.0;
+  color: var(--gold); 
+  padding-top: 20px;
+}
+.info-box {
+  background: var(--beige);
+  border: var(--gold) 1.5px solid;
+  border-radius: 20px;
+  max-width: 480px;
+  width: 90%;
+  text-align: center;
+  margin: 40px auto;
+  padding: 40px 30px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.info-title{
+ font-family: 'Playfair Display', serif;
+  text-align: center;
+  padding-left: 0px ;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.0;
+  color: var(--gold); 
+}
+.form-title{
+  font-family: 'Playfair Display', serif;
+  font-size: 22px ;
+  text-align: left;
+  color: var(--gold) ;
+  width: 100%;
+  max-width: 380px;
+  margin-top: 20px ;
+  margin-bottom: 12px ;
+}
+.form-input{
+  font-family: 'Noto Sans Thai Looped', sans-serif;
+  font-size: 16px;
+  color: var(--blue);
+  text-align: left;
+  width: 100%;
+  max-width: 380px;
+  padding: 10px 14px;
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  background-color: var(--white);
+  outline: none;
+  transition: all 0.3s ease;
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto 20px auto;
+}
+.form-input:focus {
+  border: var(--blue);
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+#submit {
+  margin-top: 30px;
+  padding: 10px 14px;
+  max-width: 380px;
+  width: 100%;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: var(--white);
+  border: var(--white) 1.5px solid;
+  border-radius: 25px;
+  background: var(--gold);
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s, background-color 0.3s;
+}
+#load-screen {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  padding-top: 10px;
+}
+.split-line{
+  background-color: var(--gold);
+  border: none;
+  height: 1px;
+  opacity: 0.6;
+  width: 100%;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.icon-link{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: var(--white);
+  border: var(--white) 1px solid;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+.social-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  display: block;
+}
+.icon-link:hover {
+  transform: translateY(-3px);
+  background-color: var(--gold);
+  box-shadow: 0 6px 15px rgba(212, 175, 55, 0.3);
+}
+.icon-link:hover .social-icon{
+  filter: brightness(0) invert(1);
+}
+.contact-title{
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.0;
+  color: var(--gold);
+  padding-right: 20px;
+}
+
+.Login-part{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 💡 ดึงกล่องลูกทุกใบ (กล่องชื่อ, กล่องคำทำนาย, ปุ่ม) เข้ามาตรงกลางหน้าจอเป๊ะๆ */
+  width: 100%;
+  text-align: center;
+}
+.Prediction-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 💡 ดึงกล่องลูกทุกใบ (กล่องชื่อ, กล่องคำทำนาย, ปุ่ม) เข้ามาตรงกลางหน้าจอเป๊ะๆ */
+  width: 100%;
+  text-align: center;
+}
+.info-customer{
+  background: var(--beige);
+  border: var(--gold) 1.5px solid;
+  border-radius: 20px;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px 30px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.prediction_text{
+  background: var(--beige);
+  border: var(--gold) 1.5px solid;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px 30px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.prediction_card{
+  background: var(--beige);
+  border: var(--gold) 1.5px solid;
+  border-radius: 20px;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  margin: 40px auto;
+  padding: 40px 30px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.goback{
+  display: block;
+  margin: 30px auto 0 auto; /* 💡 ใช้ margin รวม (บน 30px, ขวา auto, ล่าง 0, ซ้าย auto) */
+  padding: 10px 14px;
+  max-width: 380px;
+  width: 100%;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: var(--white);
+  border: var(--white) 1.5px solid;
+  border-radius: 25px;
+  background: var(--gold);
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s, background-color 0.3s;
+}
+#Cardimg_res {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}

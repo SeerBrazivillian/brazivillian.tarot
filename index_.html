@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>brazivillian.tarot.com</title>
+
+  <!-- 1. preconnect: สั่งให้เบราว์เซอร์เตรียมเชื่อมต่อกับ Google Fonts ล่วงหน้า -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- 2. stylesheet (Google Fonts): ดึงไฟล์ฟอนต์ Playfair Display และ Noto Sans Thai Looped -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- 3. stylesheet (Our CSS): เชื่อมกับไฟล์ style.css ของเรา -->
+  <link rel="stylesheet" href="css/style_.css">
+  
+</head>
+<body>
+<div class="Login-part" id="Login">
+  <h1>Welcome to <br>
+    our Miracle desk!</h1>
+  
+  <div class="info-box">
+    <h2 class="info-title"> Login </h2>
+    <br>
+    <h2 class="form-title">Name or Nickname</h2>
+    <input type="text" class="form-input" id="Name" placeholder="Ex.Seer/เซียร์">
+    
+    <h2 class="form-title">Prediction Number</h2>
+    <input type="text" class="form-input" id="Password" placeholder="Ex.BV000">
+    
+
+    <button id="submit">Enter the World</button>
+    <div id="load-screen"></div>
+    </div>
+</div>
+  
+  <div class="Prediction-part" id="Prediction" style="display: none;">
+    <h1>Welcome to <br> Prediction Center</h1>
+    <hr class="split-line">
+    <h2 class="contact-title">Information</h2>
+    <div class="info-customer">
+      <h3 id="userName-res"></h3>
+      <h3 id="Packs-res"></h3>
+      
+    </div>
+      <h2 class="contact-title">Your prediction</h2>
+      <div class="prediction_card">
+      <img alt="predict_Card" id="Cardimg_res">
+      </div>
+      
+      <div id="Textpredict_res" class="prediction_text">
+      <h3 id="Prediction-res">Your Prediction is
+      <br>Lorem</h3>
+      </div>
+      
+      <h4>Enjoy your Prediction!</h4>
+    
+    
+      <button onclick="goBack()" class="goback"> Predict again </button>
+  </div>
+   <hr class="split-line">
+  <h2 class="contact-title">Contact us</h2>
+
+  <footer>
+    <!--Instagram-->
+    <a href="https://www.instagram.com/brazivillian_tarot?igsh=MWFxeWE1a3AyNTdjdA%3D%3D&utm_source=qr" target="_blank" class="icon-link" aria-label="Instagram">
+    <img src="img/ig1.png" alt="Instagram" class="social-icon">
+    </a>
+    
+    <!--Facebook-->
+    <a href="https://www.facebook.com/share/1AdBQHEXH6/?mibextid=wwXIfr" target="_blank" class="icon-link" aria-label="Facebook">
+    <img src="img/Facebook.png" alt="Facebook" class="social-icon">
+    </a>
+    
+    <!--Line official-->
+    <a href="https://lin.ee/9JQpD9k" target="_blank" class="icon-link" aria-label="Line">
+    <img src="img/Line.png" alt="Line" class="social-icon">
+    </a>
+
+    <!--Linktree-->
+    <a href="https://linktr.ee/brazivillian_tarot" target="_blank" class="icon-link" aria-label="Linktree">
+    <img src="img/linktree.png" alt="Linktree" class="social-icon">
+    </a>
+
+    <script src="js/script_.js"></script>
+  </footer>
+  
+  </body>
+</html>
